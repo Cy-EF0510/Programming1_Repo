@@ -21,8 +21,8 @@ public class Deck {
         }
 
         // Add Jokers
-        deck[52] = new Joker(0, 1); // Joker 1
-        deck[53] = new Joker(0, 2); // Joker 2
+        deck[52] = new Joker(14, 1); // Joker 1
+        deck[53] = new Joker(14, 2); // Joker 2
     }
 
     // Parameterized constructor
