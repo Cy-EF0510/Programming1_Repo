@@ -8,8 +8,17 @@ public class Card {
         this.suit = suit;
         this.value = value;
     }
-
+    
     //Getters
+
+    public int getSuit(){
+        return suit;
+    }
+    
+    public int getValue(){
+        return value;
+    }
+
     public String getSuitAsString(){ //Return string representaiton of a card's suit based on the suit numerical value
         switch(suit) {
             case 1:

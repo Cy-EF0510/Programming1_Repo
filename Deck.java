@@ -16,7 +16,7 @@ public class Deck {
         // Add standard cards
         for (int i = 1; i <= 4; i++) { // Suits
             for (int j = 1; j <= 13; j++) { // Values
-                deck[indexCount++] = new Card(i, j);
+                deck[indexCount++] = new Card(j,i);
             }
         }
 

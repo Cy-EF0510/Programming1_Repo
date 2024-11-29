@@ -18,7 +18,7 @@ public class Game {
 
             System.out.println("You picked: " + pickedCard);
             
-            if (pickedCard.getSuit() == 5 || guessedCard.equals(pickedCard.toString().toLowerCase())) {
+            if (pickedCard.getSuit() == 14 || guessedCard.equals(pickedCard.toString().toLowerCase())) {
                 System.out.println("You win!");
                 return;
             } else {
