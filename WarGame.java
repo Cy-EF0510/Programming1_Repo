@@ -6,6 +6,7 @@ public class WarGame {
         int player2Wins = 0;
         int count = 0;
 
+        //Asks user to input players
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the first player's name: ");
         String player1Name = input.nextLine();
@@ -13,11 +14,13 @@ public class WarGame {
         String player2Name = input.nextLine();
         System.out.println("");
 
+        //Creates the users
         Player player1 = new Player(player1Name);
         Player player1CardsWon = new Player(player1Name);
         Player player2 = new Player(player2Name);
         Player player2CardsWon = new Player(player2Name);
 
+        //Shuffles deck
         Deck gameDeck = new Deck();
         gameDeck.shuffle();
         gameDeck.shuffle();
