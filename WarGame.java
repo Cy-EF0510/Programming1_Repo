@@ -1,3 +1,4 @@
+// Cyril, Colby, Sriiman, Mejd
 import java.util.Scanner;
 
 public class WarGame {
@@ -48,11 +49,11 @@ public class WarGame {
             System.out.println("Round " + (count + 1));
             System.out.print("Player 1 Please press \"Enter\" to deal a card: ");
             input.nextLine();
-            System.out.println("Player 1 deals " + player1.getPlayerDeck().dealCard(count));
+            System.out.println("Player 1 deals " + player1.getPlayerDeck().dealCard(count) + ". They now have " + (player1.getPlayerDeck().getNumCards() - count) + " cards left");
 
             System.out.print("Player 2 Please press \"Enter\" to deal a card: ");
             input.nextLine();
-            System.out.println("Player 2 deals " + player2.getPlayerDeck().dealCard(count));
+            System.out.println("Player 2 deals " + player2.getPlayerDeck().dealCard(count) + ". They now have " + (player1.getPlayerDeck().getNumCards() - count) + " cards left");
 
             //If player 1 wins, we take their winning card and player 2's losing card and add it to a new deck
             if (player1.getPlayerDeck().dealCard(count).value > player2.getPlayerDeck().dealCard(count).value) {
